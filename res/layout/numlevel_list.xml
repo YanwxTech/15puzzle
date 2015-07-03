@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/tengse_bg" >
+
+    <TextView
+        android:id="@+id/textVIew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/order_seletor"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:id="@+id/radioGroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVIew"
+        
+        android:background="@drawable/white_bg" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/threeOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="3x3"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/fourOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="4x4"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/fiveOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="5x5"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/sixOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="6x6"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radiogroup"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sevenOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="7x7"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/eightOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="8x8"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/nineOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="9x9"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/tenOrder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellowgreen_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="10x10"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

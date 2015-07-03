@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+    <ImageView
+        android:id="@+id/botton_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/game_help_introduce" />
+            <ImageView
+            android:id="@+id/eight1_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom" 
+            android:layout_marginLeft="99dp"
+            android:visibility="invisible"
+            android:src="@drawable/eight" />
+                        <ImageView
+            android:id="@+id/eight_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+			 android:layout_gravity="bottom|end" 
+            android:src="@drawable/eight" />
+
+        <ImageView
+            android:id="@+id/thumb_img"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+             android:layout_gravity="bottom|right" 
+            android:src="@drawable/thumb_slide" />
+        
+
+
+            <ImageView
+                android:id="@+id/direction_img"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|right" 
+                android:src="@drawable/guard_direction" />
+            <TextView 
+                android:id="@+id/game_success_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="60dp"
+                android:visibility="invisible"
+                android:text="游戏成功!"/>
+
+
+</FrameLayout>

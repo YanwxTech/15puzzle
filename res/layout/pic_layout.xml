@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/numlayout_bg"
+    tools:context="com.yvan.numandjiapuzzle.PicModeActivity" >
+
+    <com.yvan.gamelayout.view.PicLayout
+        android:id="@+id/picLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_margin="5dp"
+        android:background="@drawable/white_bg"
+        android:padding="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:text="@string/restart"
+            android:textColor="#d3d7d4"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/pause_resume"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_bg"
+            android:text="@string/pause"
+            android:textColor="#d3d7d4"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tmie_tip"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/retangle_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#45b97c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/moves_tip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/moves"
+            android:textColor="#f173ac"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/current_moves"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/moves_tip"
+            android:background="@drawable/retangle_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#45b97c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tmie_tip"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/time_left"
+            android:textColor="#f173ac"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_showImg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/show_currentimg" />
+
+    <Button
+        android:id="@+id/pic_help"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_showImg"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pic_help" />
+
+    <Button
+        android:id="@+id/btn_userDefined"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/userdefined_pic" />
+
+</RelativeLayout>

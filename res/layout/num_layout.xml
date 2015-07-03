@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/numlayout_bg"
+    tools:context="com.yvan.numandjiapuzzle.NumModeActivity" >
+
+    <com.yvan.gamelayout.view.NumLayout
+        android:id="@+id/numLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/numrelativeLayout1"
+        android:layout_margin="5dp"
+        android:background="@drawable/white_bg"
+        android:padding="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/numtop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/btn_numrestart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:text="@string/restart"
+            android:textColor="#d3d7d4"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/btn_numpause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_bg"
+            android:text="@string/pause"
+            android:textColor="#d3d7d4"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/numrelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numtop_layout"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/numcurrent_time"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/numtmie_tip"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/retangle_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#45b97c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nummoves_tip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/moves"
+            android:textColor="#f173ac"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numcurrent_moves"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nummoves_tip"
+            android:background="@drawable/retangle_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#45b97c"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numtmie_tip"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/time_left"
+            android:textColor="#f173ac"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

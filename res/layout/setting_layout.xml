@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/soundsOnOff"
+        style="@style/MyDialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/sounds_on_off"
+        android:textColor="#33a3dc"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/game_rank"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/rank_list"
+        android:textColor="#33a3dc"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/game_help"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/how_to_play"
+        android:textColor="#33a3dc"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/about_me"
+        android:textColor="#33a3dc"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+</LinearLayout>
